@@ -3,63 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BostadsVärderaren - Värdera ditt hem med AI</title>
+    <title>BostadsVärderaren - Värdera din bostad med AI</title>
     <style>
+        /* Grundläggande stil för att skapa en modern och professionell känsla */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f7f8fc;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 1.5rem;
             text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
         }
 
         main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
             padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        h1 {
-            color: #333;
+        .section {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2C3E50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
         }
 
         p {
-            color: #666;
-            max-width: 600px;
-            line-height: 1.5;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
         }
 
         .cta-button {
-            background-color: #4CAF50;
+            display: inline-block;
+            background-color: #3498DB;
             color: white;
             padding: 1rem 2rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
 
         .cta-button:hover {
-            background-color: #45a049;
+            background-color: #2980B9;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background-color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        .feature h3 {
+            color: #3498DB;
+            font-size: 1.4rem;
+            margin-top: 0;
         }
 
         footer {
-            background-color: #333;
+            background-color: #2C3E50;
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -67,18 +110,45 @@
 
 <header>
     <h1>BostadsVärderaren</h1>
-    <p>Värdera din bostad snabbt och enkelt med hjälp av AI</p>
+    <p>Värdera ditt hem med hjälp av avancerad AI-teknik</p>
 </header>
 
 <main>
-    <h1>Få en noggrann värdering av ditt hem</h1>
-    <p>Med vår AI-drivna tjänst får du en uppskattning av vad din lägenhet eller ditt hus är värt. Vi jämför din bostad med liknande objekt på marknaden och tar hänsyn till faktorer som storlek och läge för att ge dig en så exakt siffra som möjligt.</p>
-    <button class="cta-button">Starta din värdering</button>
+    <section class="section">
+        <h2>Få en pålitlig värdering av din bostad på bara några minuter</h2>
+        <p>Vår tjänst använder den senaste AI-tekniken för att ge dig en exakt och snabb värdering av din lägenhet eller ditt hus. Genom att jämföra din bostad med liknande objekt i ditt område kan vi ge dig en siffra som hjälper dig fatta bättre beslut om ditt hem.</p>
+        <a href="#" class="cta-button">Starta din värdering</a>
+    </section>
+
+    <section class="section">
+        <h2>Hur fungerar det?</h2>
+        <p>Med hjälp av maskininlärning och avancerad dataanalys jämför vår AI din bostad med liknande fastigheter som finns tillgängliga på marknaden. Vi analyserar storlek, läge, skick och andra faktorer för att ge dig en noggrann uppskattning av din bostads värde.</p>
+    </section>
+
+    <section class="section features">
+        <div class="feature">
+            <h3>Snabb och Enkel Process</h3>
+            <p>Värderingen tar bara några minuter och kräver minimalt med information. Resultatet levereras direkt till din skärm.</p>
+        </div>
+        <div class="feature">
+            <h3>Data från Marknaden</h3>
+            <p>Vår AI baseras på uppdaterade marknadsdata för att säkerställa en värdering som speglar den aktuella bostadsmarknaden.</p>
+        </div>
+        <div class="feature">
+            <h3>Säkert och Anonymt</h3>
+            <p>Vi värdesätter din integritet och samlar endast in den information som behövs för att ge dig en korrekt värdering.</p>
+        </div>
+        <div class="feature">
+            <h3>Expertis i AI</h3>
+            <p>Vår AI-teknik är utvecklad av ledande experter inom maskininlärning för att ge dig pålitliga värderingar.</p>
+        </div>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2024 BostadsVärderaren. Alla rättigheter förbehållna.</p>
+    <p>&copy; 2024 BostadsVärderaren. Alla rättigheter förbehållna. | <a href="#" style="color: #ecf0f1;">Integritetspolicy</a> | <a href="#" style="color: #ecf0f1;">Kontakta oss</a></p>
 </footer>
 
 </body>
 </html>
+
